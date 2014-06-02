@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#FFFFFF"
+        >
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Level"
+                android:textSize="16sp"
+                android:textColor="@color/darker_turquoise"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                />
+
+        <Spinner
+                android:id="@+id/logcat_view_$_spinner_level"
+                android:background="@color/vimeo_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:padding="3dp"
+                />
+
+
+        <EditText
+                android:id="@+id/logcat_view_$_edittext_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_rounded_tops_bottoms"
+                android:drawableLeft="@drawable/ic_action_search"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:textColor="#000000"
+                />
+    </LinearLayout>
+
+    <ListView
+            android:id="@+id/logcat_view_$_listview_log"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/vimeo_light_grey"
+            android:dividerHeight="2px"/>
+
+</LinearLayout>
+

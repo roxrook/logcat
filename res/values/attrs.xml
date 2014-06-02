@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LogcatView">
+        <attr name="color_error" format="color"/>
+        <attr name="color_debug" format="color"/>
+        <attr name="color_warning" format="color"/>
+        <attr name="color_info" format="color"/>
+        <attr name="color_assert" format="color"/>
+        <attr name="unique_log" format="boolean"/>
+    </declare-styleable>
+</resources>
